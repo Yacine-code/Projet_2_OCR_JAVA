@@ -30,7 +30,7 @@ public class ReadFile implements ISymptomReader {
 	 * La méthode lit les données d'un fichier à un emplacement donné et les écrit dans un
 	 * tableau.
 	 * 
-	 * @return List<String> avec tout les symptomes du fichier ou vide si la list est vide ou si filepath renvoie null
+	 * @return ArrayList<String> avec tout les symptomes du fichier ou vide si la Arraylist est vide ou si filepath renvoie null
 	 * @exception IOException Pas de fichier en entrée
 	 * @see IOException
 	 */

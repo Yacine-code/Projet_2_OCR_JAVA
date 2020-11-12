@@ -10,7 +10,7 @@ import com.hemebiotech.analytics.Interfaces.IWrite;
 /**
  * <h1>WriteFile</h1>
  *
- * La classe WriteOutputToFile est l'implémentation de la manière choisie
+ * La classe WriteFile est l'implémentation de la manière choisie
  * pour écrire dans un fichier en sortie
  * <p>
  * Il contient une méthode pour écrire le résultat dans un fichieren sortie .

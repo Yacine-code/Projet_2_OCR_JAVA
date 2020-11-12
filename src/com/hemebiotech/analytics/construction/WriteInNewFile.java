@@ -5,7 +5,7 @@ import com.hemebiotech.analytics.Interfaces.IWrite;
 
 /**
  * <h1>WriteNewFile</h1>
- *  Cette classe est utlisée pour implémentées une classe et une fonction contenues dans l'interface IWriteOutPut
+ *  Cette classe est utlisée pour implémentées une classe et une fonction contenues dans l'interface IWrite
  *  Elle contient une méthode WriteOutput qui permet d'ecrire dans un fichier cible (en le créant par exemple)
  * <p>
  * Elle contient une méthode qui ecrit dans un fichier en sortie
