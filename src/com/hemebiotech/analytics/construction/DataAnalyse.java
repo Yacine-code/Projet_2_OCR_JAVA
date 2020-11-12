@@ -9,6 +9,7 @@ import com.hemebiotech.analytics.Interfaces.IDataAnalysis;
 
 /**
  * <h1>DataAnalysis</h1>
+ *
  * Cette classe sert à traiter les données reçues à partir d'un support
  * elle est implémentées à partir de l'interface IDataAnalysis.
  *
@@ -32,7 +33,7 @@ public class DataAnalyse {
 	 * Cette méthode se sert de la méthode proceedData se trouvant dans IDataAnalysis et retourne une
 	 * Map avec le résultat
 	 * 
-	 * @return Map retourné avec les données traitées
+	 * @return Map retournée avec les données traitées
 	 */
 	public Map<String, Integer> analyze() 
 	{

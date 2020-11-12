@@ -8,13 +8,11 @@ high blood pressure
 stiff neck
 cough
 corona
-DADOU
 insomnia
 headache
 insomnia
 constricted pupils
 nausea
-DADOU
 cough
 shortness of breath
 blurred vision
@@ -22,7 +20,6 @@ dizziness
 low blood pressure
 dry mouth
 tremor
-DADOU
 dry mouth
 arrhythmias
 stomach pain
@@ -58,8 +55,6 @@ high blood pressure
 rapid heart rate
 high blood pressure
 high blood pressure
-DADOU
-DADOU
 blurred vision
 nausea
 shortness of breath

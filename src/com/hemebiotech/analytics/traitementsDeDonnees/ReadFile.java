@@ -1,6 +1,8 @@
 package com.hemebiotech.analytics.traitementsDeDonnees;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,8 +30,8 @@ public class ReadFile implements ISymptomReader {
 	 * La méthode lit les données d'un fichier à un emplacement donné et les écrit dans un
 	 * tableau.
 	 * 
-	 * @return List<String> avec tout les symptomes du fichier ou vide si la lis est vide ou si filepath renvoie null
-	 * @exception IOException On input error
+	 * @return List<String> avec tout les symptomes du fichier ou vide si la list est vide ou si filepath renvoie null
+	 * @exception IOException Pas de fichier en entrée
 	 * @see IOException
 	 */
 	@Override
@@ -37,30 +39,30 @@ public class ReadFile implements ISymptomReader {
 
 		ArrayList<String> symptoms = new ArrayList<String>();
 
-		if (filepath != null) {
-			
-			// FileReader : permet de gérer des flux de caractères (lecture)
-			try (BufferedReader reader = new BufferedReader(new java.io.FileReader(filepath));)  
+		if (filepath != null)
+		{
+			try (BufferedReader br= new BufferedReader(new java.io.FileReader(filepath));)
 			{
-				String line = reader.readLine(); // premier sympt�mes
-				if (line != null) 
+				// Le fichier d'entrée
+				File file = new File(filepath );
+				// Créer l'objet File Reader
+				FileReader fr = new FileReader(file);
+				String line;
+				while((line = br.readLine()) != null)
 				{
-					while (line != null) 
-					{
-						symptoms.add(line);
-						line = reader.readLine(); // passer au prochain sympt�me
-					}
-					
-					System.out.println("Analytics application lit le fichier source.");
-					
+
+					symptoms.add(line);
 
 				}
+				fr.close();
 
-			} catch (IOException e) 
-			
+			}
+			catch(IOException e)
 			{
 				e.printStackTrace();
 			}
+
+
 
 		}
 
