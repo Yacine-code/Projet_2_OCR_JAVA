@@ -10,7 +10,7 @@ import java.util.List;
 import com.hemebiotech.analytics.Interfaces.ISymptomReader;
 
 /**
- * <h1>ReadSymptomDataFromFile</h1> Classe servant à lire aprtir de la source
+ * <h1>ReadFile</h1> Classe servant à lire aprtir de la source
  * <p>
  * Il contient une méthode pour obtenir les données d'un fichier.
  * 

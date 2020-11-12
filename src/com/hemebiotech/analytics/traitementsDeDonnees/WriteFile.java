@@ -5,10 +5,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
 
-import com.hemebiotech.analytics.Interfaces.IWriteOutput;
+import com.hemebiotech.analytics.Interfaces.IWrite;
 
 /**
- * <h1>WriteOutputToFile</h1>
+ * <h1>WriteFile</h1>
  *
  * La classe WriteOutputToFile est l'implémentation de la manière choisie
  * pour écrire dans un fichier en sortie
@@ -18,7 +18,7 @@ import com.hemebiotech.analytics.Interfaces.IWriteOutput;
  * @author Yacine Ghazali
  * @version 1.0
  */
-public class WriteFile implements IWriteOutput {
+public class WriteFile implements IWrite {
 
 	private Map<String, Integer> input;
 

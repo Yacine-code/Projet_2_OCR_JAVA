@@ -8,7 +8,7 @@ import java.util.TreeMap;
 import com.hemebiotech.analytics.Interfaces.IDataAnalysis;
 
 /**
- * <h1>GroupAndCountOccurrences</h1>
+ * <h1>CountOccurencesAndClassify</h1>
  * Cette Classe sert à  traiter les données
  * <p>
  * Elle contient une méthode pour analyser les données

@@ -8,7 +8,7 @@ import java.util.Map;
 import com.hemebiotech.analytics.Interfaces.IDataAnalysis;
 
 /**
- * <h1>DataAnalysis</h1>
+ * <h1>DataAnalyse</h1>
  *
  * Cette classe sert à traiter les données reçues à partir d'un support
  * elle est implémentées à partir de l'interface IDataAnalysis.

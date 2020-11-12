@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * <h1>SymptomReaderFromSource</h1>
+ * <h1>SymptomReader</h1>
  * Cette interface est utlisée pour afin d'implémenter une classe concrète contenant la méthode implémentées par l"interface
  * <p>
  *     La méthode récupère les données sources (du fichier)

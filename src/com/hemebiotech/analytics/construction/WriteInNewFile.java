@@ -1,10 +1,10 @@
 
 package com.hemebiotech.analytics.construction;
 
-import com.hemebiotech.analytics.Interfaces.IWriteOutput;
+import com.hemebiotech.analytics.Interfaces.IWrite;
 
 /**
- * <h1>WriteOutput</h1>
+ * <h1>WriteNewFile</h1>
  *  Cette classe est utlisée pour implémentées une classe et une fonction contenues dans l'interface IWriteOutPut
  *  Elle contient une méthode WriteOutput qui permet d'ecrire dans un fichier cible (en le créant par exemple)
  * <p>
@@ -15,10 +15,10 @@ import com.hemebiotech.analytics.Interfaces.IWriteOutput;
  */
 public class WriteInNewFile {
 
-	private IWriteOutput writeOutput;
+	private IWrite writeOutput;
 
 
-	public WriteInNewFile(IWriteOutput writeOutput) {
+	public WriteInNewFile(IWrite writeOutput) {
 
 		this.writeOutput = writeOutput;
 	}
