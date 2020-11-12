@@ -3,6 +3,7 @@ Sample project for OpenClassroom's fundamentals of Java
 Le programme comporte trois phases : 
 
 Lecture des symptômes ligne par ligne dans le fichier 
+
 Regroupement et compte du nombre d’occurrences de chaque symptômes 
 Ecrire le résultat dans un fichier nommé « result.out »
 
