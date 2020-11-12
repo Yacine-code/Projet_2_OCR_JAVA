@@ -24,15 +24,14 @@ public class AnalyticsApplication
 {
 
 	/**
-	 * C'est la méthode pricipale, elle instancie la méthode analyzeData qui utilise toutes les classes nécessaires
+	 * C'est la méthode pricipale, elle instancie la méthode Main qui utilise toutes les classes nécessaires
 	 * à la lecture, le traitement et l'écriture des données à patir d'un fichier source
 	 *
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 
 		 String filepath= "../Projet_2_OCR_JAVA/symptoms.txt";
-
-		//AnalyticsCounter counter = new AnalyticsCounter("../Projet_2_OpenClassRooms/symptoms.txt");
 
 		System.out.println("Lancement de l'application Analytics !");
 		// lancement application
@@ -45,9 +44,9 @@ public class AnalyticsApplication
 		DataAnalyse analysisTool = new DataAnalyse(new GroupAndCountOccurrences(data));
 		//compte les occurences avec "GroupSymptomsAndCountOccurrences"
 
-		// puis avec DataAnalysie met le tout dans un MAP
 
-		Map<String, Integer> result = new TreeMap<>(analysisTool.analyze()); // creation d'un map pour recevoir le map retourn� par anlasysisTool.analyze
+        // creation d'un map pour recevoir le map retourné par anlasysisTool.analyze
+		Map<String, Integer> result = new TreeMap<>(analysisTool.analyze());
 
 		WriteInNewFile writeTool = new WriteInNewFile(new WriteFile(result)); // �criture dans un map " writeTool "
 
