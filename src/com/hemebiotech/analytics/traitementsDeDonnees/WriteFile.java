@@ -28,7 +28,7 @@ public class WriteFile implements IWriteOutput {
 	/**
 	 *
 	 * Cette méthode lit les données de la Map qui contient le résultat
-	 * et les écrit dans un fichier dans la destination de sortie.
+	 * et les écrit dans un fichier dans le fichier en sortie.
 	 * Si la map est vide, la méthode renvoie un fichier avec le message "No data proceed".
 	 * 
 	 * @exception IOException On output error
@@ -41,7 +41,8 @@ public class WriteFile implements IWriteOutput {
 
 		try (FileWriter writer = new FileWriter(result)) {
 
-			if (!input.isEmpty()) {
+			if (!input.isEmpty())
+			{
 
 				for (String symptom : input.keySet()) // symptom egal la clef du hashMap
 				{
