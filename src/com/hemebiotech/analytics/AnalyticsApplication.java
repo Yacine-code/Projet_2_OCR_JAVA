@@ -3,7 +3,7 @@ package com.hemebiotech.analytics;
 import com.hemebiotech.analytics.construction.DataAnalyse;
 import com.hemebiotech.analytics.construction.SymptomReader;
 import com.hemebiotech.analytics.construction.WriteInNewFile;
-import com.hemebiotech.analytics.traitementsDeDonnees.GroupAndCountOccurrences;
+import com.hemebiotech.analytics.traitementsDeDonnees.CountOccurencesAndClassify;
 import com.hemebiotech.analytics.traitementsDeDonnees.ReadFile;
 import com.hemebiotech.analytics.traitementsDeDonnees.WriteFile;
 
@@ -41,8 +41,8 @@ public class AnalyticsApplication
 
 		List<String> data = new ArrayList<>(reader.getData());// bufferise les donn�es de "reader"dans "data"
 
-		DataAnalyse analysisTool = new DataAnalyse(new GroupAndCountOccurrences(data));
-		//compte les occurences avec "GroupSymptomsAndCountOccurrences"
+		DataAnalyse analysisTool = new DataAnalyse(new CountOccurencesAndClassify(data));
+
 
 
         // creation d'un map pour recevoir le map retourné par anlasysisTool.analyze

@@ -17,12 +17,12 @@ import com.hemebiotech.analytics.Interfaces.IDataAnalysis;
  * @version 1.0
  *
  */
-public class GroupAndCountOccurrences implements IDataAnalysis
+public class CountOccurencesAndClassify implements IDataAnalysis
 {
 
 	private List<String> source;
 
-	public GroupAndCountOccurrences(List<String> source)
+	public CountOccurencesAndClassify(List<String> source)
 	{
 		this.source = source;
 	}
